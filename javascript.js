@@ -16,35 +16,35 @@ function getComputerChoice()
 
 function playRound(playerSelection, computerSelection) {
     
-    console.log(computerSelection);
+    /*console.log(computerSelection);*/
     let str=null;
-    if(playerSelection == computerSelection)
+    if(playerSelection.toUpperCase() === computerSelection.toUpperCase())
     {
         str="Oh no!! It's a tie";
     }
     else
     {
 
-        if(playerSelection=="rock" || playerSelection=="Rock" )
+        if(playerSelection.toUpperCase()=== "ROCK" )
         {
-            if(computerSelection=="scissors" || computerSelection=="Scissors")
+            if(computerSelection=="Scissors")
             str="You won!! Rock beat Scissors";
             
             else
             str=`You lose!! ${computerSelection} beat Rock`;
         }
-        else if(playerSelection=="scissors" || playerSelection=="Scissor" )
+        else if(playerSelection.toUpperCase()=== "SCISSORS" )
         {
-            if(computerSelection=="paper" || computerSelection=="Paper")
+            if(computerSelection=="Paper")
             str="You won!! Scissors beat Paper";
             
             else
             str=`You lose!! ${computerSelection} beat Scissors`;
         }
 
-        else if(playerSelection=="paper" || playerSelection=="Paper" )
+        else if(playerSelection.toUpperCase()=== "PAPER" )
         {
-            if(computerSelection=="rock" || computerSelection=="Rock")
+            if(computerSelection=="Rock")
             str="You won!! Paper beat Rock";
             
             else
