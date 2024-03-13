@@ -94,7 +94,14 @@ function playGame()
         console.log(`computer ${computerSelection}`);
         const playerSelection=prompt("Choose Rock, Paper or Scissors"); 
         console.log(playRound(playerSelection, computerSelection));
-       
+        if(winner=="Player")
+        {
+            player++;
+        }
+        if (winner=="computer")
+        {
+            computer++;
+        }
     }
 
     
