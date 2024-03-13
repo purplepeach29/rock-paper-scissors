@@ -19,6 +19,7 @@ var winner=null;
 function playRound(playerSelection, computerSelection) {
     
     /*console.log(computerSelection);*/
+    winner=null;
     let str=null;
     if(playerSelection.toUpperCase() === computerSelection.toUpperCase())
     {
@@ -91,19 +92,38 @@ function playGame()
     for(var i=0;i<5;i++)
     {
         const computerSelection = getComputerChoice();
-        console.log(`computer ${computerSelection}`);
+        console.log(`computer choice ${computerSelection}`);
         const playerSelection=prompt("Choose Rock, Paper or Scissors"); 
         console.log(playRound(playerSelection, computerSelection));
-        if(winner=="Player")
+        console.log(`${winner} wins this round`);
+
+        if(winner=="player")
         {
             player++;
+            
         }
         if (winner=="computer")
         {
             computer++;
         }
+        console.log(`Scoreboard : computer ${computer} player: ${player}  `);
+
     }
 
+    if(player === computer)
+    {
+        console.log("Score even");
+    }
+    else if(player > computer)
+    {
+        console.log(`You won by ${player} points !!`);
+
+    }
+    else if(computer > player)
+    {
+        console.log(`Computer won by ${computer} points`);
+
+    }
     
 }
 playGame();
