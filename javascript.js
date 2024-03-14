@@ -77,20 +77,15 @@ function playRound(playerSelection, computerSelection) {
             }
         }
     }
+    /*alert(str);*/
     return str;
   }
   
-
-/*const playerSelection = "rock";
-console.log(playRound(playerSelection, computerSelection));
-  */
 
 function playGame()
 {
     var player=0;
     var computer =0;
-    for(var i=0;i<5;i++)
-    {
         const computerSelection = getComputerChoice();
         console.log(`computer choice ${computerSelection}`);
         const playerSelection=prompt("Choose Rock, Paper or Scissors"); 
@@ -108,7 +103,7 @@ function playGame()
         }
         console.log(`Scoreboard : computer ${computer} player: ${player}  `);
 
-    }
+    
 
     if(player === computer)
     {
@@ -126,4 +121,41 @@ function playGame()
     }
     
 }
-playGame();
+
+/*playGame();*/
+
+/*
+function playrock()
+{
+    
+    var playerSelection="rock"
+    let ans=playRound(playerSelection,computerSelection);
+    alert(ans);
+}
+*/
+const btnRock=document.querySelector(".rock");
+
+btnRock.addEventListener("click", ()=> {
+    var computerSelection = getComputerChoice();
+    var playerSelection="rock"
+    let ans=playRound(playerSelection,computerSelection);
+    console.log(ans);
+});
+
+const btnPaper=document.querySelector(".paper");
+
+btnPaper.addEventListener("click", ()=> {
+    var computerSelection = getComputerChoice();
+    var playerSelection="paper"
+    let ans=playRound(playerSelection,computerSelection);
+    console.log(ans);
+});
+
+const btnScissors=document.querySelector(".scissors");
+
+btnScissors.addEventListener("click", ()=> {
+    var computerSelection = getComputerChoice();
+    var playerSelection="scissors"
+    let ans=playRound(playerSelection,computerSelection);
+    console.log(ans);
+});
