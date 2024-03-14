@@ -130,17 +130,6 @@ function playGame()
     
 }
 
-/*playGame();*/
-
-/*
-function playrock()
-{
-    
-    var playerSelection="rock"
-    let ans=playRound(playerSelection,computerSelection);
-    alert(ans);
-}
-*/
 var player=0;
 var computer =0;
 var tieCounter=0;    
@@ -189,35 +178,3 @@ btn.forEach((button) => {
         }
     });
 });
-/*let ans=null;
-
-btnRock.addEventListener("click", ()=> {
-    var computerSelection = getComputerChoice();
-    var playerSelection="rock"
-    ans=playRound(playerSelection,computerSelection);
-    console.log(ans);
-});
-
-const btnPaper=document.querySelector(".paper");
-
-btnPaper.addEventListener("click", ()=> {
-    var computerSelection = getComputerChoice();
-    var playerSelection="paper"
-    ans=playRound(playerSelection,computerSelection);
-    console.log(ans);
-});
-
-const btnScissors=document.querySelector(".scissors");
-
-btnScissors.addEventListener("click", ()=> {
-    var computerSelection = getComputerChoice();
-    var playerSelection="scissors"
-    ans=playRound(playerSelection,computerSelection);
-    console.log(ans);
-});
-
-
-const newp =document.createElement('p');
-content.classList.add("content");
-content.textContent=`${ans}`;
-display.appendChild(content);*/
