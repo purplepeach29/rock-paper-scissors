@@ -7,9 +7,6 @@ function getComputerChoice()
     "Scissors"];
     var index=Math.floor(Math.random() * 3);
     var choice=options[index];
-    /*alert(choice);
-    */
-
     return choice;
 }
 
@@ -18,12 +15,14 @@ var winner=null;
 
 function playRound(playerSelection, computerSelection) {
     
-    /*console.log(computerSelection);*/
+    console.log(computerSelection);
+    console.log(playerSelection);
     winner=null;
     let str=null;
     if(playerSelection.toUpperCase() === computerSelection.toUpperCase())
     {
         str="Oh no!! It's a tie";
+        return "Tie";
     }
     else
     {
@@ -34,12 +33,15 @@ function playRound(playerSelection, computerSelection) {
             {
                str="You won!! Rock beat Scissors";
                winner="player"; 
+               return "Won";
             } 
 
             else
             {
                 str=`You lose!! ${computerSelection} beat Rock`;
                 winner="computer"; 
+                return "Lost";
+
 
             }
         }
@@ -49,6 +51,8 @@ function playRound(playerSelection, computerSelection) {
             {
                 str="You won!! Scissors beat Paper";
                 winner="player"; 
+                return "Won";
+
 
             }
             
@@ -56,6 +60,7 @@ function playRound(playerSelection, computerSelection) {
             {
             str=`You lose!! ${computerSelection} beat Scissors`;
             winner="computer"; 
+            return "Lost";
 
             }
         }
@@ -66,6 +71,8 @@ function playRound(playerSelection, computerSelection) {
             {
             str="You won!! Paper beat Rock";
             winner="player"; 
+            return "Won";
+
 
             }
             
@@ -73,12 +80,13 @@ function playRound(playerSelection, computerSelection) {
             {
             str=`You lose!! ${computerSelection} beat Paper`;
             winner="computer"; 
+            return "Lost";
 
             }
         }
     }
-    /*alert(str);*/
-    return str;
+    console.log(str);
+    
   }
   
 
@@ -133,12 +141,60 @@ function playrock()
     alert(ans);
 }
 */
-const btnRock=document.querySelector(".rock");
+var player=0;
+var computer =0;
+var tieCounter=0;    
+const display=document.querySelector(".contain");
+const content=document.querySelector(".result");
+
+const btn=document.querySelectorAll("button");
+btn.forEach((button) => {
+
+    button.addEventListener('click',() => {
+
+        content.textContent= "Round Result: " + (playRound(button.id,getComputerChoice())); 
+        content.append(document.createElement("BR"));
+        const newP = document.createElement('p');
+        content.append(newP);
+        if(content.textContent === "Round Result: Won"){
+        player ++;
+        newP.textContent = "Your Score: " + player + "; " + "Computer Score: " + computer + "; " + "Tie Counter: " + tieCounter;
+
+        }
+        else if(content.textContent === "Round Result: Loss"){
+            computer ++;
+            newP.textContent = "Your Score: " + player + "; " + "Computer Score: " + computer + "; " + "Tie Counter: " + tieCounter;
+        }
+        else if(content.textContent === "Round Result: Tie"){
+            tieCounter ++;
+            newP.textContent = "Your Score: " + player + "; " + "Computer Score: " + computer + "; " + "Tie Counter: " + tieCounter;
+        }
+        
+        if (player === 5){
+            alert("You Win!")
+            const scoreFinal = newP.textContent;
+            newP.textContent = "Final --- " + scoreFinal;
+            document.getElementById("rock").disabled = true; 
+            document.getElementById("paper").disabled = true; 
+            document.getElementById("scissors").disabled = true; 
+
+        }
+        else if(computer === 5){
+            alert("You Lose")
+            const scoreFinal = newP.textContent;
+            newP.textContent = "Final --- " + scoreFinal;
+            document.getElementById("rock").disabled = true;
+            document.getElementById("paper").disabled = true; 
+            document.getElementById("scissors").disabled = true; 
+        }
+    });
+});
+/*let ans=null;
 
 btnRock.addEventListener("click", ()=> {
     var computerSelection = getComputerChoice();
     var playerSelection="rock"
-    let ans=playRound(playerSelection,computerSelection);
+    ans=playRound(playerSelection,computerSelection);
     console.log(ans);
 });
 
@@ -147,7 +203,7 @@ const btnPaper=document.querySelector(".paper");
 btnPaper.addEventListener("click", ()=> {
     var computerSelection = getComputerChoice();
     var playerSelection="paper"
-    let ans=playRound(playerSelection,computerSelection);
+    ans=playRound(playerSelection,computerSelection);
     console.log(ans);
 });
 
@@ -156,6 +212,12 @@ const btnScissors=document.querySelector(".scissors");
 btnScissors.addEventListener("click", ()=> {
     var computerSelection = getComputerChoice();
     var playerSelection="scissors"
-    let ans=playRound(playerSelection,computerSelection);
+    ans=playRound(playerSelection,computerSelection);
     console.log(ans);
 });
+
+
+const newp =document.createElement('p');
+content.classList.add("content");
+content.textContent=`${ans}`;
+display.appendChild(content);*/
