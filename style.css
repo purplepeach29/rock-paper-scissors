@@ -2,11 +2,18 @@ h2
 {
     font-family: ;
     border: 3px solid brown;
-    border-radius: 10px;
-    color:rgb(241, 140, 73);
+    border-radius: 50%;
+    color:rgb(158, 77, 22);
     background-color: rgb(248, 228, 203);
-    padding: 15px;
+    padding: 20px;
     margin: 30px auto;
     text-align: center;
-    width: 250px;
+    width: 100px;
+    height: 100px;
+}
+
+body
+{
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F4581190.jpg&f=1&nofb=1&ipt=7a97863097440f296731438e220b357c84dd7c7907007a85f928926219251145&ipo=images');
+    background-size: 100% 275% ;
 }
