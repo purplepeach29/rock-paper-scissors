@@ -15,13 +15,15 @@ var winner=null;
 
 function playRound(playerSelection, computerSelection) {
     
-    console.log(computerSelection);
-    console.log(playerSelection);
+    console.log(`computer choice: ${computerSelection}`);
+    console.log(`player choice: ${playerSelection}`);
     winner=null;
     let str=null;
     if(playerSelection.toUpperCase() === computerSelection.toUpperCase())
     {
         str="Oh no!! It's a tie";
+        console.log(str);
+
         return "Tie";
     }
     else
@@ -33,6 +35,8 @@ function playRound(playerSelection, computerSelection) {
             {
                str="You won!! Rock beat Scissors";
                winner="player"; 
+               console.log(str);
+
                return "Won";
             } 
 
@@ -40,6 +44,8 @@ function playRound(playerSelection, computerSelection) {
             {
                 str=`You lose!! ${computerSelection} beat Rock`;
                 winner="computer"; 
+                console.log(str);
+
                 return "Lost";
 
 
@@ -51,6 +57,8 @@ function playRound(playerSelection, computerSelection) {
             {
                 str="You won!! Scissors beat Paper";
                 winner="player"; 
+                console.log(str);
+
                 return "Won";
 
 
@@ -60,6 +68,8 @@ function playRound(playerSelection, computerSelection) {
             {
             str=`You lose!! ${computerSelection} beat Scissors`;
             winner="computer"; 
+            console.log(str);
+
             return "Lost";
 
             }
@@ -71,6 +81,8 @@ function playRound(playerSelection, computerSelection) {
             {
             str="You won!! Paper beat Rock";
             winner="player"; 
+            console.log(str);
+
             return "Won";
 
 
@@ -80,12 +92,13 @@ function playRound(playerSelection, computerSelection) {
             {
             str=`You lose!! ${computerSelection} beat Paper`;
             winner="computer"; 
+            console.log(str);
+
             return "Lost";
 
             }
         }
     }
-    console.log(str);
     
   }
   
@@ -150,7 +163,7 @@ btn.forEach((button) => {
         newP.textContent = "Your Score: " + player + "; " + "Computer Score: " + computer + "; " + "Tie Counter: " + tieCounter;
 
         }
-        else if(content.textContent === "Round Result: Loss"){
+        else if(content.textContent === "Round Result: Lost"){
             computer ++;
             newP.textContent = "Your Score: " + player + "; " + "Computer Score: " + computer + "; " + "Tie Counter: " + tieCounter;
         }
