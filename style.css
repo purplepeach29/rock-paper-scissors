@@ -17,6 +17,7 @@ body
 {
     background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F4581190.jpg&f=1&nofb=1&ipt=7a97863097440f296731438e220b357c84dd7c7907007a85f928926219251145&ipo=images');
     background-size: 100% 200% ;
+    background-repeat: no-repeat;
 }
 
 .subtext
