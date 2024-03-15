@@ -1,6 +1,5 @@
-h2
+.title
 {
-    font-family: ;
     border: 3px solid brown;
     border-radius: 50%;
     color:rgb(158, 77, 22);
@@ -15,5 +14,45 @@ h2
 body
 {
     background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F4581190.jpg&f=1&nofb=1&ipt=7a97863097440f296731438e220b357c84dd7c7907007a85f928926219251145&ipo=images');
-    background-size: 100% 275% ;
+    background-size: 100% 200% ;
 }
+
+.subtext
+{
+    text-align: center;
+    color:rgb(119, 17, 17);
+
+}
+.play
+{
+    display: flex;
+    /*flex-direction: column;*/
+    justify-content: center;
+    /*align-items: center;*/
+    color:rgb(119, 17, 17);
+    gap:20px;
+    
+}
+
+img
+{
+    width: 100px;
+    height: 100px;
+    
+}
+
+#rock,
+#paper,
+#scissors
+{
+    border-radius:50%;
+    box-shadow: none;
+    border-color: beige;
+}
+/*
+.paper,
+.scissors
+{
+    border-radius:50%;
+
+}*/
