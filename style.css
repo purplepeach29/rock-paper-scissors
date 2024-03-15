@@ -37,6 +37,7 @@ body
     justify-content: center;
     color:rgb(119, 17, 17);
     gap:20px;
+    height: 125px;
     
 }
 
@@ -69,7 +70,7 @@ img
     padding: 15px;
     font-weight: bold;
     width: 250px;
-    height: 125px;
+    height: 160px;
 }
 
 .left
@@ -80,7 +81,7 @@ img
     text-align:center;
     margin-right: auto;
     margin-left: 30px;
-    font-size: 25px;
+    font-size: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -96,8 +97,5 @@ img
     color:rgb(71, 6, 6);
     font-weight: bold;
     margin-right: 30px;
-    height: 125px;
 
-
-    
 }
