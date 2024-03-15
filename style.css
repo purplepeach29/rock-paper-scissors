@@ -24,6 +24,10 @@ body
     color:rgb(119, 17, 17);
 
 }
+
+
+
+
 .play
 {
     display: flex;
@@ -49,10 +53,48 @@ img
     border-color: beige;
 }
 
-.contain
+.back
 {
     display: flex;
-    justify-content: center;
-    color:rgb(119, 17, 17);
+}
+.left,
+.contain
+{
+    border-radius: 20px;
+    /*background-color: rgb(243, 183, 149);*/
+    padding: 15px;
     font-weight: bold;
+    width: 250px;
+    height: 150px;
+}
+
+.left
+{
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia1.tenor.com%2Fimages%2F82bd93fb6ec6c323471704034f9755df%2Ftenor.gif%3Fitemid%3D5352272&f=1&nofb=1&ipt=619cef9899da0b8cdb1fb45b7d6b02fbe3293173a1a6ce6ab9456ecca551d6a3&ipo=images');
+    background-size: 100% 100%;
+    color:rgb(245, 191, 155);
+    text-align:center;
+    margin-right: auto;
+    margin-left: 30px;
+    font-size: 30px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+
+}
+.contain
+{
+    /*display: flex;
+    justify-content: center;   */
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.graphicsfuel.com%2Fwp-content%2Fuploads%2F2011%2F01%2Fclipboard-512x512.png&f=1&nofb=1&ipt=d8447bf34e782790a2c88103b8784e29faf67eff5fa034f42141985a5ef31f13&ipo=images');
+    background-size: 100% 100%;
+    margin-left: auto;
+    text-align: center;
+    color:rgb(100, 12, 12);
+
+    margin-right: 30px;
+    height: 125px;
+
+
+    
 }

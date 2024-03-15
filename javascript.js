@@ -160,22 +160,22 @@ btn.forEach((button) => {
         content.append(newP);
         if(content.textContent === "Round Result: Won"){
         player ++;
-        newP.textContent = "Your Score: " + player + "; " + "Computer Score: " + computer + "; " + "Tie Counter: " + tieCounter;
+        newP.textContent = "Your Score: " + player +  " | " + "Computer Score: " + computer + " | " + "Tie Counter: " + tieCounter;
 
         }
         else if(content.textContent === "Round Result: Lost"){
             computer ++;
-            newP.textContent = "Your Score: " + player + "; " + "Computer Score: " + computer + "; " + "Tie Counter: " + tieCounter;
+            newP.textContent = "Your Score: " + player + " | " + "Computer Score: " + computer + " | " + "Tie Counter: " + tieCounter;
         }
         else if(content.textContent === "Round Result: Tie"){
             tieCounter ++;
-            newP.textContent = "Your Score: " + player + "; " + "Computer Score: " + computer + "; " + "Tie Counter: " + tieCounter;
+            newP.textContent = "Your Score: " + player + " | " + "Computer Score: " + computer + " | " + "Tie Counter: " + tieCounter;
         }
         
         if (player === 5){
             alert("You Win!")
             const scoreFinal = newP.textContent;
-            newP.textContent = "Final --- " + scoreFinal;
+            newP.textContent = "Final Score--- " + scoreFinal;
             document.getElementById("rock").disabled = true; 
             document.getElementById("paper").disabled = true; 
             document.getElementById("scissors").disabled = true; 
@@ -184,7 +184,7 @@ btn.forEach((button) => {
         else if(computer === 5){
             alert("You Lose")
             const scoreFinal = newP.textContent;
-            newP.textContent = "Final --- " + scoreFinal;
+            newP.textContent = "Final Score--- " + scoreFinal;
             document.getElementById("rock").disabled = true;
             document.getElementById("paper").disabled = true; 
             document.getElementById("scissors").disabled = true; 
