@@ -45,29 +45,18 @@ body
 
 .subtext
 {
-    text-align: center;
+    margin-left: 400px;
     font-size: 30px;
     color:rgb(66, 6, 6);
 
 }
 
-.top
-{
-    display: flex;
-    justify-content: space-between;
-}
-
-.bottom
-{
-    display: flex;
-    justify-content: center;
-}
-
 .play
 {
-
+    display: flex;
+    flex-direction: column;
     height: 140px;
-    width: 450px;
+    width: 200px;
 
 }
 .rockimg:hover,
@@ -101,8 +90,19 @@ img
 {
     display: flex;
     margin-top: 10px;
+    justify-content: space-between;
 }
 
+.comp
+{
+    width: 100px;
+    height: 300px;
+    margin-right: 30px;
+    color: rgb(66, 6, 6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .left,
 .contain
@@ -112,30 +112,29 @@ img
     font-weight: bold;
     text-align: center;
     color:rgb(66, 6, 6);
+    width: 180px;
+    height: 225px;
+
 }
 
 .left
 {
     background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pngall.com%2Fwp-content%2Fuploads%2F2016%2F07%2FScroll-PNG.png&f=1&nofb=1&ipt=a7dc5cb6745dabfdc6f4f266b1328b2789b136311e51f9dd56afda98aef266ca&ipo=images');
-    margin-right: auto;
-    margin-left: 30px;
     font-size: auto;
     display: flex;
     justify-content: center;
+    margin-left: 50px;
     align-items: center;
-    width: 180px;
-    height: 200px;
+   
 
 }
 .contain
 {
     background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pngall.com%2Fwp-content%2Fuploads%2F2016%2F07%2FScroll-PNG.png&f=1&nofb=1&ipt=a7dc5cb6745dabfdc6f4f266b1328b2789b136311e51f9dd56afda98aef266ca&ipo=images');
-    margin-left: auto;
     font-weight: bold;
-    margin-right: 30px;
     padding: 30px;
-    width: 180px;
-    height: 225px;
+    margin-right: 50px;
+
 }
 
 

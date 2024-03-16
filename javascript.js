@@ -148,6 +148,7 @@ var computer =0;
 var tieCounter=0;    
 const display=document.querySelector(".contain");
 const content=document.querySelector(".result");
+const compchoice=document.getElementById('compchoice');
 const gameOutcome = document.getElementById('gameOutcome');
 const restart = document.getElementById('restart');
 const overlay = document.getElementById('overlay');
@@ -157,7 +158,17 @@ btn.forEach((button) => {
 
     button.addEventListener('click',() => {
 
-        content.textContent= "ROUND RESULT: " + (playRound(button.id,getComputerChoice())); 
+        let computerSelection = getComputerChoice();
+
+        if(computerSelection==="Rock")
+        compchoice.innerHTML = '<img width="100" height="100" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ffreepngimg.com%2Fthumb%2Frock%2F8-2-rock-png-picture-thumb.png&f=1&nofb=1&ipt=9cb3db63b15372630baf99c45261121ba7a516df847035c4263e64dc66a03cb9&ipo=images">';
+        else if(computerSelection==="Paper")
+        compchoice.innerHTML = '<img width="100" height="100" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.textures4photoshop.com%2Ftex%2Fthumbs%2Ffree-burnt-paper-texture-background-thumb35.png&f=1&nofb=1&ipt=d0caba553c7aabd13c2a6e03e370352dbf1bfc77047afb530e203a0650808ab7&ipo=images">';
+        else if(computerSelection==="Scissors")
+        compchoice.innerHTML = '<img width="100" height="100" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn0.rubylane.com%2Fshops%2Fchelseaantiques%2FRL00962.1L.jpg%3F52&f=1&nofb=1&ipt=29d75104cbb2c1c6849d06f30e8818cb1b4fd47b165de459bb80533d87e30780&ipo=images">';
+        
+
+        content.textContent= "ROUND RESULT: " + (playRound(button.id,computerSelection)); 
         content.append(document.createElement("BR"));
         const newP = document.createElement('p');
         content.append(newP);
