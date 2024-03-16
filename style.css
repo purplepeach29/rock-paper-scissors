@@ -112,3 +112,51 @@ img
     width: 180px;
     height: 225px;
 }
+
+
+#overlay {
+    position: fixed;
+    display: none;;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(236, 183, 153, 0.75);
+    z-index: 2;
+    cursor: pointer;
+}
+
+#modal {
+    
+    gap: 0.5em;
+    position: relative;
+    top: 35%;
+    color: rgb(95, 6, 6);
+    background-color: #e48245;
+    box-shadow: 2px 2px 5px #89776b;
+    border-radius: 10px;
+    border: 1px solid #a08b7d;
+    width: 15em;
+    margin: auto;
+    height: 7em;
+    font-size: 1.1em;
+    padding: 1em 0.75em;
+}
+
+#restart {
+    color: #fff;
+    box-shadow: 1px 1px 5px #332d26;
+    background-color: #5b4f48;
+    border: 1px solid #332d26;
+    border-radius: 5px;
+    font-size: 1.3em;
+    padding: 0.5em;
+}
+
+.block
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

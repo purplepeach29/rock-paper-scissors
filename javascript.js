@@ -148,6 +148,9 @@ var computer =0;
 var tieCounter=0;    
 const display=document.querySelector(".contain");
 const content=document.querySelector(".result");
+const gameOutcome = document.getElementById('gameOutcome');
+const restart = document.getElementById('restart');
+const overlay = document.getElementById('overlay');
 
 const btn=document.querySelectorAll("button");
 btn.forEach((button) => {
@@ -172,22 +175,32 @@ btn.forEach((button) => {
             newP.textContent = "Your Score: " + player + " | " + "Computer Score: " + computer + " | " + "Tie Counter: " + tieCounter;
         }
         
-        if (player === 5){
-            alert("You Win!")
-            const scoreFinal = newP.textContent;
-            newP.textContent = "Final Score--- " + scoreFinal;
-            document.getElementById("rock").disabled = true; 
-            document.getElementById("paper").disabled = true; 
-            document.getElementById("scissors").disabled = true; 
-
+        /*function isGameOver() {*/
+            if (player === 5 || computer === 5) {
+                overlay.style.display = "block";
+                if (player > computer) {
+                    gameOutcome.textContent = "You are worthy!";
+                } else {
+                    gameOutcome.textContent = "Try your luck again !"
+                }
+        
+            }
+        /*}*/
+        
+        restart.addEventListener('click', restartGame);
+        
+        function restartGame() {
+            overlay.style.display = "none";
+            computer = 0;
+            player = 0;
+            tieCounter=0;
+            content.textContent= " "; 
+            
+            playerChoice.innerHTML = "";
+            computerChoice.innerHTML = "";
+            currentScore.textContent = `${playerScore} : ${computerScore}`;
+            roundOutcome.textContent = "First to score 5 points wins the game!";
         }
-        else if(computer === 5){
-            alert("You Lose")
-            const scoreFinal = newP.textContent;
-            newP.textContent = "Final Score--- " + scoreFinal;
-            document.getElementById("rock").disabled = true;
-            document.getElementById("paper").disabled = true; 
-            document.getElementById("scissors").disabled = true; 
-        }
+      
     });
 });
