@@ -157,31 +157,31 @@ btn.forEach((button) => {
 
     button.addEventListener('click',() => {
 
-        content.textContent= "Round Result: " + (playRound(button.id,getComputerChoice())); 
+        content.textContent= "ROUND RESULT: " + (playRound(button.id,getComputerChoice())); 
         content.append(document.createElement("BR"));
         const newP = document.createElement('p');
         content.append(newP);
-        if(content.textContent === "Round Result: Won"){
+        if(content.textContent === "ROUND RESULT: Won"){
         player ++;
-        newP.textContent = "Your Score: " + player +  " | " + "Computer Score: " + computer + " | " + "Tie Counter: " + tieCounter;
+        newP.textContent = "YOUR SCORE: " + player +  " | " + "COMPUTER SCORE: " + computer + " | " + "TIE COUNTER: " + tieCounter;
 
         }
-        else if(content.textContent === "Round Result: Lost"){
+        else if(content.textContent === "ROUND RESULT: Lost"){
             computer ++;
-            newP.textContent = "Your Score: " + player + " | " + "Computer Score: " + computer + " | " + "Tie Counter: " + tieCounter;
+            newP.textContent = "YOUR SCORE: " + player + " | " + "COMPUTER SCORE: " + computer + " | " + "TIE COUNTER: " + tieCounter;
         }
-        else if(content.textContent === "Round Result: Tie"){
+        else if(content.textContent === "ROUND RESULT: Tie"){
             tieCounter ++;
-            newP.textContent = "Your Score: " + player + " | " + "Computer Score: " + computer + " | " + "Tie Counter: " + tieCounter;
+            newP.textContent = "YOUR SCORE: " + player + " | " + "COMPUTER SCORE: " + computer + " | " + "TIE COUNTER: " + tieCounter;
         }
         
         /*function isGameOver() {*/
             if (player === 5 || computer === 5) {
                 overlay.style.display = "block";
                 if (player > computer) {
-                    gameOutcome.textContent = "You are worthy!";
+                    gameOutcome.textContent = "YOU ARE WORTHY!";
                 } else {
-                    gameOutcome.textContent = "Try your luck again !"
+                    gameOutcome.textContent = "TRY YOUR LUCK AGAIN !"
                 }
         
             }
@@ -195,7 +195,7 @@ btn.forEach((button) => {
             player = 0;
             tieCounter=0;
             content.textContent= " "; 
-            
+
             playerChoice.innerHTML = "";
             computerChoice.innerHTML = "";
             currentScore.textContent = `${playerScore} : ${computerScore}`;
