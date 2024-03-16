@@ -1,22 +1,24 @@
+@font-face {
+    font-family: 'Pixelify-sans';
+    src: url('~/repos/rock-paper-scissors/PixelifySans-VariableFont_wght.ttf');
+}
+
 .title
 {
-    /*border: 3px solid brown;*/
-    border-radius: 50%;
+   
     color:rgb(66, 6, 6);
-    font-family: Courier;
-    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg-s-msn-com.akamaized.net%2Ftenant%2Famp%2Fentityid%2FBB1iGOjG.img%3Fw%3D1800%26h%3D900%26m%3D4%26q%3D79&f=1&nofb=1&ipt=2c1f5243044610200f2b71d106accdf7beb15a6f909250fd24ea6ade243b21c9&ipo=images');
-    background-size: 100% 100%;
+    /*background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg-s-msn-com.akamaized.net%2Ftenant%2Famp%2Fentityid%2FBB1iGOjG.img%3Fw%3D1800%26h%3D900%26m%3D4%26q%3D79&f=1&nofb=1&ipt=2c1f5243044610200f2b71d106accdf7beb15a6f909250fd24ea6ade243b21c9&ipo=images');
+    background-size: 100% 100%;*/
     padding: 20px;
-    margin: 30px auto;
+    margin: 20px auto;
     text-align: center;
-    width: 100px;
-    height: 100px;
+
 }
 
 body
 {
     background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F4581190.jpg&f=1&nofb=1&ipt=7a97863097440f296731438e220b357c84dd7c7907007a85f928926219251145&ipo=images');
-    background-size: 100% 200% ;
+    background-size: 100% 130% ;
     background-repeat: no-repeat;
 }
 
@@ -24,7 +26,7 @@ body
 {
     text-align: center;
     font-size: 30px;
-    color:rgb(119, 17, 17);
+    color:rgb(66, 6, 6);
 
 }
 
@@ -73,42 +75,40 @@ img
     margin-top: 50px;
 }
 
+
 .left,
 .contain
 {
-    border-radius: 20px;
+    /*border-radius: 20px;*/
     padding: 15px;
     font-weight: bold;
-   
+    color:rgb(66, 6, 6);
 }
 
 .left
 {
-    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia1.tenor.com%2Fimages%2F82bd93fb6ec6c323471704034f9755df%2Ftenor.gif%3Fitemid%3D5352272&f=1&nofb=1&ipt=619cef9899da0b8cdb1fb45b7d6b02fbe3293173a1a6ce6ab9456ecca551d6a3&ipo=images');
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pngall.com%2Fwp-content%2Fuploads%2F2016%2F07%2FScroll-PNG.png&f=1&nofb=1&ipt=a7dc5cb6745dabfdc6f4f266b1328b2789b136311e51f9dd56afda98aef266ca&ipo=images');
     background-size: 100% 100%;
-    color:rgb(245, 163, 115);
     text-align:center;
     margin-right: auto;
     margin-left: 30px;
     font-size: auto;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content:end;
-    width: 250px;
-    height: 160px;
+    width: 180px;
+    height: 180px;
 
 }
 .contain
 {
-    background-image: url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.graphicsfuel.com%2Fwp-content%2Fuploads%2F2011%2F01%2Fclipboard-512x512.png&f=1&nofb=1&ipt=d8447bf34e782790a2c88103b8784e29faf67eff5fa034f42141985a5ef31f13&ipo=images');
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pngall.com%2Fwp-content%2Fuploads%2F2016%2F07%2FScroll-PNG.png&f=1&nofb=1&ipt=a7dc5cb6745dabfdc6f4f266b1328b2789b136311e51f9dd56afda98aef266ca&ipo=images');
     background-size: 100% 100%;
     margin-left: auto;
     text-align: center;
-    color:rgb(250, 217, 217);
     font-weight: bold;
     margin-right: 30px;
-    padding-top: 20px;
-    width: 150px;
+    padding: 30px;
+    width: 180px;
     height: 225px;
 }
