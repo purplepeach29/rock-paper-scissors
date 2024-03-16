@@ -1,16 +1,16 @@
-@font-face {
-    font-family: 'Pixelify-sans';
-    src: url('~/repos/rock-paper-scissors/PixelifySans-VariableFont_wght.ttf');
-}
-
+.jim-nightshade-regular {
+    font-family: "Jim Nightshade";
+    font-weight: 100;
+    font-style: normal;
+  }
+  
 .title
 {
    
     color:rgb(66, 6, 6);
-    /*background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg-s-msn-com.akamaized.net%2Ftenant%2Famp%2Fentityid%2FBB1iGOjG.img%3Fw%3D1800%26h%3D900%26m%3D4%26q%3D79&f=1&nofb=1&ipt=2c1f5243044610200f2b71d106accdf7beb15a6f909250fd24ea6ade243b21c9&ipo=images');
-    background-size: 100% 100%;*/
     padding: 20px;
-    margin: 20px auto;
+    font-family: "Jim Nightshade", cursive;
+    margin: 30px auto;
     text-align: center;
 
 }
@@ -19,6 +19,8 @@ body
 {
     background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F4581190.jpg&f=1&nofb=1&ipt=7a97863097440f296731438e220b357c84dd7c7907007a85f928926219251145&ipo=images');
     background-size: 100% 130% ;
+    font-family: "Jim Nightshade";
+
     background-repeat: no-repeat;
 }
 
@@ -72,7 +74,7 @@ img
 .back
 {
     display: flex;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 
