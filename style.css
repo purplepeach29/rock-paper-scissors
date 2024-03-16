@@ -66,9 +66,16 @@ body
 .play
 {
 
-    height: 125px;
+    height: 140px;
     width: 450px;
 
+}
+.rockimg:hover,
+.paperimg:hover,
+.scissorsimg:hover
+{
+    width: 140px ;
+    height: 130px;
 }
 
 img
@@ -100,17 +107,16 @@ img
 .left,
 .contain
 {
-    /*border-radius: 20px;*/
     padding: 15px;
+    background-size: 100% 100%;
     font-weight: bold;
+    text-align: center;
     color:rgb(66, 6, 6);
 }
 
 .left
 {
     background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pngall.com%2Fwp-content%2Fuploads%2F2016%2F07%2FScroll-PNG.png&f=1&nofb=1&ipt=a7dc5cb6745dabfdc6f4f266b1328b2789b136311e51f9dd56afda98aef266ca&ipo=images');
-    background-size: 100% 100%;
-    text-align:center;
     margin-right: auto;
     margin-left: 30px;
     font-size: auto;
@@ -124,9 +130,7 @@ img
 .contain
 {
     background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pngall.com%2Fwp-content%2Fuploads%2F2016%2F07%2FScroll-PNG.png&f=1&nofb=1&ipt=a7dc5cb6745dabfdc6f4f266b1328b2789b136311e51f9dd56afda98aef266ca&ipo=images');
-    background-size: 100% 100%;
     margin-left: auto;
-    text-align: center;
     font-weight: bold;
     margin-right: 30px;
     padding: 30px;
